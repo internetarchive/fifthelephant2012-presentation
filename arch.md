@@ -1,5 +1,3 @@
-----
-
 # Architecture #
 
 ----
@@ -60,7 +58,7 @@
 
 .fx: notitle
 
-<img src="images/petabox-2.jpg" style="height: 100%;"/>
+<img src="images/petabox-2.jpg" style=width: 100%;"/>
 
 <div class="banner">
     <h3>The current racks</h3>
@@ -96,21 +94,67 @@
 ----
 
 # Implementation #
-* Storage layer stores `items`
-    * Files + derivatives + metadata
-    * <http://archive.org/details/EmacsMovies>
-* `items` are grouped into `collections`
-* Individual files are  exposed via. http
-  <http://ia700800.us.archive.org/1/items/EmacsMovies/04-episode-region.ogv>
-* Permissions are UNIX file permissions.
-* Extra metadata are in `_files.xml` and `_meta.xml`.
-* Different applications like archive.org, wayback machine access this data.
+
+----
+
+# Items #
+* Fundamental unit of storage. 
+* The archive is basically a large collection of items.
+* A directory tree consisting of
+    * Original files
+    * Derivatives
+    * XML Metadata
+
+----
+
+# Item example #
+
+.fx: notitle
+
+<img src="images/item-1.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
+    
+</div>
+
+----
+
+# Item example #
+
+.fx: notitle
+
+<img src="images/item-2.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
+    
+</div>
+
+----
+# Collections #
+
+* `Collections` are groups of items.
+* Used for classification.
+
+----
+
+# Collection example #
+
+.fx: notitle
+
+<img src="images/collection.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3><a href="http://archive.org/details/netlabels">http://archive.org/details/netlabels</a></h3>
+    
+</div>
 
 ----
 
 # Locator service #
-* UDP packet sent out when an item is requested on archive.org.
-* Server that holds the data responds.
+* UDP packet sent out when a file needs to be downloaded.
+* Server that holds that item responds.
 * HTTP redirect to that server.
 * Allows any number of storage nodes without much infrastructure change.
 
@@ -119,6 +163,7 @@
 * Uploaded items are rsynced to a `worker`.
 * Deriver taks run on them that create new files out of the originals. 
      * e.g. `ogg`, `mp3` out of `FLAC` files. 
+     * OCR uploaded books cans to get the text out. 
 * New files created, metadata updated and item rsynced back to primary.
 * Originals unmodified. Derivatives often more useful.
 
@@ -127,13 +172,14 @@
 * Offline task queue.
 * Heart of the archives data processing operations.
 * Time consuming modifications to data are done via. catalogue tasks.
-* Old fashioned message queue. Has tasks from over half a decade ago.
+* Old fashioned message queue. Has tombstones from over half a decade ago.
 
 ----
-
 # Software stack #
-* PHP, Nginx, Solr, MySQL, Redis and a pinch of Python and Java for the apps.
-* Xen for virtualisation. Might move to KVM.
+* PHP, Nginx, Solr, MySQL, Redis, solr and a pinch of Python and Java for the apps.
+* KVM for virtualisation.
 * Nagios, graphite, MRTG, cacti
 
+---
 
+# Questions #
