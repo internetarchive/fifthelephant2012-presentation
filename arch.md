@@ -3,7 +3,7 @@
 ----
 
 # Aims #
-* Primary mission is long term preservation of data.
+* Universal access to all knowledge.
 * Emphasis on preservation and archival.
 * *"Code dies, data lives on".*
 
