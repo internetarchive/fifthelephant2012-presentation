@@ -104,6 +104,7 @@
     * Original files
     * Derivatives
     * XML Metadata
+* Each item is stores on two servers for redundancy.    
 
 ----
 
