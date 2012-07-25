@@ -1,0 +1,50 @@
+* Architecture
+  - Aims
+    - Items, paired storage
+    - Redundancy
+    - simplicity, long-term vision
+    - less maintenance, low cost
+    - independence, self-sufficiency
+  - Software
+    - items, collections, unix permissions
+    - items are self contained
+    - locator
+    - deriver
+    - catalog
+
+* Notes
+** Architecture
+   - Preservation of data. 
+     - The need to use reliable rather than trendy devices. (Zip
+       disks, MO disks, floptical disks).
+     - The need to use reliable and time tested formats (no
+       fragemented file systems).
+     - It can be inefficient but has to be reliable and long lasting.
+     - It should be recoverable in the future without too specialised
+       much historical knowledge.
+   - principles
+     - Conservative technology choices.
+     - Nothing we can quickly try and throw away. No fickle URLs and public APIs.
+     - Independence and self sufficiency. We should have the tech. to
+       do what we need without "outsourcing". This rules out things
+       like cloud storage etc.
+     - Low maintenance. We should be able to run with a limited
+       staff. Automation plays a big role here as does a simple design
+       with just a few moving parts.
+     - Low cost wherever possible as long it doesn't conflict with the above.
+   - Design
+     - Flat file storage is reliable as opposed to binary formats
+       (corruption etc.)
+     - The _meta.xml and _files.xml contain metadata for the item. Not a separate database.
+     - We try to not use binary formats that are opaque.
+     - Redundancy
+       - Paired storage. There are two copies of every unit of data (the primary and secondary).
+       - There are partial mirrors of the archive in Amsterdam and Egypt.
+
+
+
+   - Implementation 
+     - Items are files + derivatives + metadata
+     - Collections are groups of items. An item can be in multiple collections. Similar to "tags".
+
+       
