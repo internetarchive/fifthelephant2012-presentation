@@ -152,21 +152,19 @@
 </div>
 
 ----
+# Main services #
+* The site functions using three main pieces
+    * The locator
+    * The catalogue
+    * The deriver
+
+----
 
 # Locator service #
 * UDP packet sent out when a file needs to be downloaded.
 * Server that holds that item responds.
 * HTTP redirect to that server.
 * Allows any number of storage nodes without much infrastructure change.
-
-----
-# Deriver #
-* Uploaded items are rsynced to a `worker`.
-* Deriver taks run on them that create new files out of the originals. 
-     * e.g. `ogg`, `mp3` out of `FLAC` files. 
-     * OCR uploaded books cans to get the text out. 
-* New files created, metadata updated and item rsynced back to primary.
-* Originals unmodified. Derivatives often more useful.
 
 -----
 # Catalogue #
@@ -176,6 +174,16 @@
 * Old fashioned message queue. Has tombstones from over half a decade ago.
 
 ----
+# Deriver #
+* Uploaded items are rsynced to a `worker`.
+* Deriver taks run on them that create new files out of the originals. 
+     * e.g. `ogg`, `mp3` out of `FLAC` files. 
+     * OCR uploaded book scans to get the text out.
+* New files created, metadata updated and item rsynced back to primary.
+* Originals unmodified. Derivatives often more useful.
+* Derivation is a catalogue task.
+----
+
 # Software stack #
 * PHP, Nginx, Solr, MySQL, Redis, solr and a pinch of Python and Java for the apps.
 * KVM for virtualisation.
