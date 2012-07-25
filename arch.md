@@ -1,4 +1,49 @@
-# Architecture #
+# Big data #
+
+----
+
+# Most considerations are short term #
+
+
+-----
+# Where would you store your data? #
+
+.fx: notitle
+
+<img src="images/xdrive.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3>Where would you store your valuable data?</h3>
+</div>
+
+----
+
+# How would you store your data? #
+
+.fx: notitle
+
+<img src="images/zipdrive.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3>How would you store your valuable data?</h3>
+</div>
+
+----
+
+# Landfill #
+
+.fx: notitle
+
+<img src="images/landfill.jpg" style="height: 100%;"/>
+
+<div class="banner">
+    <h3>What can you recover from a hardisk you find here?</h3><br/>
+    <a href="http://chrissycarpenter.files.wordpress.com/2010/10/landfill.jpg">http://chrissycarpenter.files.wordpress.com/2010/10/landfill.jpg</a>
+</div>
+
+----
+
+# A different perspective : Long term preservation #
 
 ----
 
@@ -27,6 +72,7 @@
 * Unix permissions
 
 ----
+
 
 # Hardware #
 * The [petabox](http://archive.org/web/petabox.php) - Designed originally to hold 1 petabyte of data.
