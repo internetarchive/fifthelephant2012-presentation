@@ -201,7 +201,7 @@
 # Main services #
 * The site functions using three main pieces
     * The locator
-    * The catalogue
+    * The catalog
     * The deriver
 
 ----
@@ -213,10 +213,10 @@
 * Allows any number of storage nodes without much infrastructure change.
 
 -----
-# Catalogue #
+# Catalog #
 * Offline task queue.
 * Heart of the archives data processing operations.
-* Time consuming modifications to data are done via. catalogue tasks.
+* Time consuming modifications to data are done via. catalog tasks.
 * Old fashioned message queue. Has tombstones from over half a decade ago.
 
 ----
@@ -227,7 +227,7 @@
      * OCR uploaded book scans to get the text out.
 * New files created, metadata updated and item rsynced back to primary.
 * Originals unmodified. Derivatives often more useful.
-* Derivation is a catalogue task.
+* Derivation is a catalog task.
 ----
 
 # Software stack #
