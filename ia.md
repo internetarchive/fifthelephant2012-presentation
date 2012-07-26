@@ -56,8 +56,59 @@
 <img src="images/ia-home.png" style="width: 100%;"/>
 
 <div class="banner">
-    <h3>www.archive.org</h3>
+    <h3>http://archive.org/</h3>
 </div>
+
+---
+
+# What is the average lifetime of a URL?
+
+&nbsp;
+
+---
+
+# What is the average lifetime of a URL?
+
+* **“…estimates put the average lifetime for a URL at 44 days.”**
+
+    <br/>
+    Brewster Khale "Preserving the Internet" Scientific American, 1997 
+    <http://www.sciam.com/0397issue/0397kahle.html>
+
+---
+
+# What is the average lifetime of a URL?
+
+* *“…estimates put the average lifetime for a URL at 44 days.”*
+
+    <br/>
+    Brewster Khale "Preserving the Internet" Scientific American, 1997 
+    <http://www.sciam.com/0397issue/0397kahle.html>
+
+* **“44% of the sites available on the internet in 1998 had vanished one year later“**
+
+---
+# Preserving the Internet in the Wayback Machine
+
+.fx: notitle
+
+<img src="images/wayback-sciam-full.png" style="width: 100%"/>
+
+<div class="banner">
+    <h3 style="font-size: 1.1em"><a href="http://web.archive.org/web/19980627072808/http://www.sciam.com/0397issue/0397kahle.html">http://web.archive.org/web/19980627072808/http://www.sciam.com/0397issue/0397kahle.html</a></h3>
+</div>
+
+---
+# Sun CEO Blog in the Wayback Machine
+
+.fx: notitle
+
+<img src="images/wayback-sunblog-full.png" style="width: 100%"/>
+
+<div class="banner">
+    <h3 style="font-size: 1.1em"><a href="http://web.archive.org/web/20101023072550/http://blogs.sun.com/jonathan/entry/congratulations_google">http://web.archive.org/web/20101023072550/http://blogs.sun.com/jonathan/entry/congratulations_google</a></h3>
+</div>
+
 
 ---
 
@@ -66,7 +117,6 @@
 .fx: notitle bottom-title
 
 <img src="images/wayback-full.png" style="width: 100%;"/>
-
 
 ---
 ## www.apple.com - 1996
@@ -205,6 +255,13 @@
 <img src="images/bookscanning-map.png" style="width: 100%;"/>
 
 ---
+# http://openlibrary.org/
+
+.fx: notitle bottom-title
+
+<img src="images/openlibrary-full.png" style="width: 100%;"/>
+
+---
 
 # Sample Book
 
@@ -230,7 +287,7 @@
 
 ---
 
-# IA Book Reader
+## IA Book Reader
 
 The book reader can be embedded in any web page. 
 
