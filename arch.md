@@ -1,75 +1,64 @@
-# Big data #
+# Big Data 
+
+* 3.5 million books
+* 170+ billion web pages
+* More than 6 Petabytes of data
 
 ----
 
-# Most considerations are short term #
+# Items #
+* Fundamental unit of storage. 
+* The archive is basically a large collection of items (10 million+).
+* A directory tree consisting of
+    * Original files
+    * Derivatives
+    * XML Metadata
+* Each item is stored on two servers for redundancy.
 
+----
 
------
-# Where would you store your data? #
+# Item example #
 
 .fx: notitle
 
-<img src="images/xdrive.png" style="width: 100%;"/>
+<img src="images/item-1.png" style="width: 100%;"/>
 
 <div class="banner">
-    <h3>Where would you store your valuable data?</h3>
+    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
+    
 </div>
 
 ----
 
-# How would you store your data? #
+# Item example #
 
 .fx: notitle
 
-<img src="images/zipdrive.png" style="width: 100%;"/>
+<img src="images/item-2.png" style="width: 100%;"/>
 
 <div class="banner">
-    <h3>How would you store your valuable data?</h3>
+    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
+    
 </div>
 
 ----
+# Collections #
 
-# Landfill #
+* `Collections` are groups of items.
+* Used for classification.
+
+----
+
+# Collection example #
 
 .fx: notitle
 
-<img src="images/landfill.jpg" style="height: 100%;"/>
+<img src="images/collection.png" style="width: 100%;"/>
 
 <div class="banner">
-    <h3>What can you recover from a hardisk you find here?</h3><br/>
-    <a href="http://chrissycarpenter.files.wordpress.com/2010/10/landfill.jpg">http://chrissycarpenter.files.wordpress.com/2010/10/landfill.jpg</a>
+    <h3><a href="http://archive.org/details/netlabels">http://archive.org/details/netlabels</a></h3>
+    
 </div>
-
-----
-
-# A different perspective : Long term preservation #
-
-----
-
-# Aims #
-* Universal access to all knowledge.
-* Emphasis on preservation and archival.
-* *"Code dies, data lives on".*
-
-----
-
-# Principles #
-* Simplicity. Battle tested technologies.
-* Independence and self-sufficiency.
-* Low maintenance.
-* Low cost.
-
-----
-
-# Design #
-* Flat file storage.
-* Self contained - Metadata stored along with data.
-* Reliable formats - Easy to access *forever*.
-* Redundancy
-    * Paired storage.
-    * Mirrored at the Bibliotheca Alexandrina <http://archive.bibalex.org/>
-* Unix permissions
 
 ----
 
@@ -82,9 +71,6 @@
 * No air conditioning
 * Fits in a shipping container. 
 * Currently 4 data centres - 1300 nodes, 11000 spinning disks
-* 2.4 PB for the wayback machine. 
-* 1.7 PB for Books/video/audio collections.
-* 5.8 PB Total used storage.
 
 ---- 
 
@@ -137,68 +123,11 @@
         <a href="http://www.computerwoche.de/bild-zoom/1891307/1/489893/EL_12381492082557490680957/">http://www.computerwoche.de/bild-zoom/1891307/1/489893/EL_12381492082557490680957/</a>
     
 </div>
-----
-
-# Implementation #
 
 ----
 
-# Items #
-* Fundamental unit of storage. 
-* The archive is basically a large collection of items.
-* A directory tree consisting of
-    * Original files
-    * Derivatives
-    * XML Metadata
-* Each item is stores on two servers for redundancy.    
+# Main services
 
-----
-
-# Item example #
-
-.fx: notitle
-
-<img src="images/item-1.png" style="width: 100%;"/>
-
-<div class="banner">
-    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
-    
-</div>
-
-----
-
-# Item example #
-
-.fx: notitle
-
-<img src="images/item-2.png" style="width: 100%;"/>
-
-<div class="banner">
-    <h3><a href="http://archive.org/details/HollywoodWithoutMakeup">http://archive.org/details/HollywoodWithoutMakeup</a></h3>
-    
-</div>
-
-----
-# Collections #
-
-* `Collections` are groups of items.
-* Used for classification.
-
-----
-
-# Collection example #
-
-.fx: notitle
-
-<img src="images/collection.png" style="width: 100%;"/>
-
-<div class="banner">
-    <h3><a href="http://archive.org/details/netlabels">http://archive.org/details/netlabels</a></h3>
-    
-</div>
-
-----
-# Main services #
 * The site functions using three main pieces
     * The locator
     * The catalog
@@ -235,6 +164,50 @@
 * KVM for virtualisation.
 * Nagios, graphite, MRTG, cacti
 
----
+----
 
-# Questions?
+# What makes the Archive different?
+
+-----
+# Where would you store your data? #
+
+.fx: notitle
+
+<img src="images/xdrive.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3>Where would you store your valuable data?</h3>
+</div>
+
+----
+
+# How would you store your data? #
+
+.fx: notitle
+
+<img src="images/zipdrive.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3>How would you store your valuable data?</h3>
+</div>
+
+----
+
+# The Approach
+
+* Long term preservation
+* Simplicity. Battle tested technologies.
+* Independence and self-sufficiency.
+* Low maintenance.
+* Low cost.
+* *"Code dies, data lives on".*
+
+----
+
+# Thanks!
+
+.fx: center
+
+## See us at the Internet Archive stall on the first floor.
+
+http://archive.org/

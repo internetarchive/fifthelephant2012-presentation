@@ -1,5 +1,5 @@
 presentation.html: presentation.cfg ia.md arch.md Makefile
-	landslide -c presentation.cfg
+	landslide -i -c presentation.cfg
 
 clean:
 	rm presentation.html

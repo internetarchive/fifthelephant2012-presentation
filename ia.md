@@ -24,19 +24,19 @@
     <a src="http://www.archive.org/">Internet Archive</a>
 </p>
 
-
 ----
 
-# Internet Archive
+# The Internet Archive
 
 .fx: notitle
 
-<img src="images/ialogo.png" style="height: 100%"/>
+<img src="images/archive-building.jpg" style="height: 100%; margin-left: -70px;"/>
 
+<div class="banner">
+    <h3>The Internet Archive</h3>
+    <span>http://www.flickr.com/photos/blmurch/5079018246/</span>
+</div>
 
----
-
-# Universal Access to All Knowledge
 
 ---
 
@@ -45,19 +45,6 @@
 .fx: notitle
 
 <img src="images/ia-sf-bangalore.png" style="height: 100%;"/>
-
-
----
-
-# Internet Archive
-
-.fx: notitle
-
-<img src="images/ia-home.png" style="width: 100%;"/>
-
-<div class="banner">
-    <h3>http://archive.org/</h3>
-</div>
 
 ---
 
@@ -96,6 +83,18 @@
 
 <div class="banner">
     <h3 style="font-size: 1.1em"><a href="http://web.archive.org/web/19980627072808/http://www.sciam.com/0397issue/0397kahle.html">http://web.archive.org/web/19980627072808/http://www.sciam.com/0397issue/0397kahle.html</a></h3>
+</div>
+
+---
+
+# archive.org in 1997
+
+.fx: notitle
+
+<img src="images/wayback-archive-full.png" style="width: 100%"/>
+
+<div class="banner">
+    <h3>archive.org in 1997</h3>
 </div>
 
 ---
@@ -291,7 +290,7 @@
 
 The book reader can be embedded in any web page. 
 
-<iframe src='http://www.archive.org/stream/opticksortreatisnewt?ui=embed#mode/2up' width='100%' height='70%' frameborder='0' >
+<iframe src='http://www.archive.org/stream/opticksortreatisnewt?ui=embed#mode/2up' width='100%' height='480px' frameborder='0' >
 </iframe>
 
 ---
@@ -304,3 +303,20 @@ The book reader can be embedded in any web page.
 </div>
 <img style="float: left; width: 45%; padding: 10px;" src="images/opticks-newton2.jpg" />
 </div>
+
+---
+
+# Internet Archive
+
+.fx: notitle
+
+<img src="images/ia-home.png" style="width: 100%;"/>
+
+<div class="banner">
+    <h3>http://archive.org/</h3>
+</div>
+
+---
+
+# Universal Access to All Knowledge
+
